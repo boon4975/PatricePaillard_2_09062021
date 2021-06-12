@@ -1,0 +1,179 @@
+/* ------ General ------*/
+    /* format page */
+        #blockpage {
+            max-width: 1340px;
+            margin: auto;
+            font-family: 'Raleway-SemiBold';
+        }
+    /* Input change border */
+    .inputOutline:focus {
+        outline : 1px solid gray;
+        border-radius: 4px;
+    }
+
+    /* police */
+
+        @font-face {
+            font-family: 'Raleway-SemiBold';
+            src: url(../fonts/Raleway-SemiBold.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1 {
+            font-family: 'Raleway-SemiBold';
+            font-size: 1.1em;
+        }
+        h3 {
+            font-size: 0.9em;
+        }
+        p {
+            font-size: 0.8em;
+        }
+
+     /* flex */
+        .flexCenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flexBetween {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flexAround {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .flexLeft {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .flexEnd {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .flexBetweenRow {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    /* text color and decoration */
+        .listnodecoration {
+            list-style-type: none;
+        }
+
+        .colorBlue {
+            color: #0065FC;
+        }
+        .colorBlueLight {
+            color: #deebff;
+        }
+        .backGray {
+            background-color: #F2F2F2;
+        }
+        .backBlueLight {
+            background-color: #deebff;
+        }
+
+
+/* ------ menu Navigation ------*/
+        .listnav {
+            padding: 2em 1em 2em 1em;
+            color: #0065FC;
+            font-weight: bolder;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        nav a:hover {
+            border-top: 2px solid #0065FC;
+            padding-top: 2em;
+        }
+        nav a:visited {
+            color: #0065FC;
+            font-weight: normal;
+        }
+
+/*------ logo Reservia ------*/
+        .logo {
+            padding: 0 0 0 0;
+        }
+
+/*------ Search menu ------*/
+        .searchZone {
+            max-width: 420px;
+            height: 50px;
+            border: #F2F2F2 1px solid;
+            border-radius: 15px;
+        }
+        .iconeMap {
+            text-align: center;
+            width: 50px;
+        }
+        .entryField {
+            width: 240px;
+            height: 50px;
+            border: #F2F2F2 1px solid;
+            padding-left: 10px;
+        }
+        .searchButton {
+            text-align: right;
+            color: white;
+            background-color: #0065FC;
+            width: 101%;
+            height: 101%;
+            align-items: center;
+            border-radius: 0 15px 15px 0;
+         }
+
+/*------ Filtres ------*/
+        .filtres {
+            max-width: 70%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            display: flex;
+            /*align-items: center;
+            height: 50px;*/
+        }
+        .filtresText {
+            margin-right: 1em;
+        }
+        .filtresTextIcone {
+            border: #F2F2F2 2px solid;
+            border-radius: 30px;
+            margin-right: 1em;
+            height: 50px;
+        }
+        .filtresIcone {
+            width: 52px;
+            height: 52px;
+            border-radius: 25px;
+        }
+        #iconCenter {
+            display: flex;
+        }
+        .filtresCategory {
+            padding-left: 0.8em;
+            padding-right: 1em;
+            height: 50px;
+            border-radius: 0 25px 25px 0;
+        }
+        .filtresTextIcone:hover > .filtresCategory {
+            color: #0065FC;
+        }
+        .filtresTextIcone:hover > .filtresIcone {
+            background-color: #0065FC;
+            color: white;
+        }
+        
+
+/*------ INFO ------*/
+
+        
+       
+
