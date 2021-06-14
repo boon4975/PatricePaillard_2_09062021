@@ -41,6 +41,12 @@
             justify-content: space-between;
             align-items: center;
         }
+        .flexColumnCenterBetween {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
         .flexAround {
             display: flex;
             justify-content: space-around;
@@ -51,12 +57,12 @@
             justify-content: left;
             align-items: center;
         }
-        .flexEnd {
+        .flexColumn {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            flex-direction: column;
+            
         }
-        .flexBetweenRow {
+        .flexBetweenRow?? {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -238,7 +244,6 @@
             height: 115px;
             border-radius: 25px 25px 0px 0;
             width: 100%;
-
         }
         .hostingDescription {
             margin-left: 10px;
@@ -285,6 +290,69 @@
         .hostingPopularPrice {
             line-height: none;
         }
+
+/*------ Section Activités ------*/
+        .sectionActivity {
+            max-height: 500px;
+            max-width: 1340px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            
+        }
+        .activityTitle {
+            margin-top: 1em;
+        }
+        .blockActivity {
+            display: flex;
+            justify-content: space-between;
+            height: 450px;
+        }
+        .activityBox1 {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-right: 2%;
+        }
+        .activityBox2 {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-left: 2%;
+            margin-right: 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 47%;
+        }
+        .activityBox3 {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .activityBox4 {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-left: 2%;
+            display: flex;        
+            flex-direction: column;
+            justify-content: space-between;
+            height: 47%;
+        }
+        .activityImage13 {
+            width: 300px;
+            height: 85%;
+            border-radius: 30px 30px 0 0;      
+        }
+        .activityImage24 {
+            width: 300px;
+            height: 80%;
+            border-radius: 30px 30px 0 0;      
+        }
+        .activityText13 {
+            margin-left: 5%;
+        }
+        .activityText24 {
+            margin-left: 5%;
+       }
        
 
 
