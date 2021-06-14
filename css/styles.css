@@ -213,8 +213,12 @@
             background-color: #F2F2F2;            
             border-radius: 25px;            
         }
-        .articleText {
+        .articleTitle {
             padding-top: 2em;
+            padding-left: 1em;
+        }
+        .articleText {
+            padding-top: 1em;
             padding-left: 1em;
         }    
         .articleHostingBlock {
@@ -223,9 +227,9 @@
         }
         .cadreHost {
             background-color: white;
-            border-radius: 25px;
+            border-radius: 30px;
             width: 27%;
-            padding: 5px;
+            padding: 1%;
             margin-top: 10px;
         }
               
@@ -255,23 +259,33 @@
         }
         .cadreHostPopular {
             background-color: white;
-            border-radius: 25px;
-            padding: 5px;
+            border-radius: 30px;
+            padding: 1%;
             margin: 0 20px 40px 20px;
             height: 30%;
             display: flex;
+            align-items: flex-start;
+        }
+        .hostingPopularDescription {
+            margin-left: 20px;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            
         }
         .imagePopularHost {
             border-radius: 25px 0 0 25px;
             width: 125px;
             height: 125px;
         }
-        .hostingPopularDescription {
-            margin-left: 20px;
-        }
         .hostingPopularStar {
-            margin-top: 20px;
+            
+            align-self: baseline;
         }
+        .hostingPopularPrice {
+            line-height: none;
+        }
+       
 
 
         
