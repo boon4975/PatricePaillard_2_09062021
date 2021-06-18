@@ -1,26 +1,28 @@
 /* ------ General ------*/
     /* format page */
-        #blockpage {
-            max-width: 1340px;
+        body {
+            max-width: 1440px;
             margin: auto;
-            font-family: 'Raleway-SemiBold';
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+        }
+        #blockpage {
+            max-width: 93%;
+            margin: auto;
+            
         }
     /* Input change border */
     .inputOutline:focus {
-        outline : 1px solid gray;
+        outline: 1px solid gray;
         border-radius: 4px;
     }
 
     /* police */
 
-        @font-face {
-            font-family: 'Raleway-SemiBold';
-            src: url(../fonts/Raleway-SemiBold.ttf) format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
         h1 {
-            font-family: 'Raleway-SemiBold';
             font-size: 1.1em;
         }
         h3 {
@@ -41,6 +43,12 @@
             justify-content: space-between;
             align-items: center;
         }
+        .flexColumnCenterBetween {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
         .flexAround {
             display: flex;
             justify-content: space-around;
@@ -51,17 +59,11 @@
             justify-content: left;
             align-items: center;
         }
-        .flexEnd {
+        .flexColumn {
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            flex-direction: column;
         }
-        .flexBetweenRow {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
+        
     /* text color and decoration */
         .listnodecoration {
             list-style-type: none;
@@ -69,6 +71,9 @@
 
         .colorBlue {
             color: #0065FC;
+        }
+        .colorGray {
+            color: #F2F2F2;
         }
         .colorBlueLight {
             color: #deebff;
@@ -97,11 +102,6 @@
         nav a:visited {
             color: #0065FC;
             font-weight: normal;
-        }
-
-/*------ logo Reservia ------*/
-        .logo {
-            padding: 0 0 0 0;
         }
 
 /*------ Search menu ------*/
@@ -137,24 +137,34 @@
             margin-top: 2em;
             margin-bottom: 2em;
             display: flex;
-            /*align-items: center;
-            height: 50px;*/
+            flex-wrap: wrap;
         }
         .filtresText {
             margin-right: 1em;
+            margin-top: 1%;
         }
         .filtresTextIcone {
             border: #F2F2F2 2px solid;
             border-radius: 30px;
             margin-right: 1em;
             height: 50px;
+            margin-top: 1%;
         }
         .filtresIcone {
             width: 52px;
             height: 52px;
             border-radius: 25px;
         }
-        #iconCenter {
+        #iconMoney {
+            display: flex;
+        }
+        #iconChild {
+            display: flex;
+        }
+        #iconHeart {
+            display: flex;
+        }
+        #iconDog {
             display: flex;
         }
         .filtresCategory {
@@ -165,6 +175,7 @@
         }
         .filtresTextIcone:hover > .filtresCategory {
             color: #0065FC;
+            font-style: italic;
         }
         .filtresTextIcone:hover > .filtresIcone {
             background-color: #0065FC;
@@ -173,7 +184,309 @@
         
 
 /*------ INFO ------*/
+        .infoVille {
+            display: flex;
+            align-items: center;
+        }
+        .iconInfo {
+            border: 1px solid gray;
+            border-radius: 25px;
+            height: 20px;
+            width: 25px;
+            text-align: center;
+            margin-right: 0.7em;
+            padding-top: 4px;
+        }
 
+/*------ Section Article Hosting ------*/
+        .mainHostingBox {
+            /*max-height: 625px;*/
+            max-width: 100%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+        }
+        .hostingBox {
+            flex: 2;
+            background-color: #F2F2F2;
+            border-radius: 25px;
+        }
+        .hostingTitle {
+            padding-top: 2em;
+            padding-left: 1em;
+        }
+        .seemoreText {
+            padding-top: 1em;
+            padding-left: 1em;
+        }    
+        .HostingBlock {
+           flex-wrap: wrap;
+        }
+        .cadreHost {
+            background-color: white;
+            border-radius: 30px;
+            width: 240px;
+            padding: 1%;
+            margin-top: 10px;
+            /*overflow: hidden;*/
+        }
+              
+        /* Hosting image */
+        .imageHostBox {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 115px;
+            border-radius: 25px 25px 0px 0;
+        }
+        .imageHost {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+        }
+        .hostingDescription {
+            margin-left: 10px;
+        }
         
+/*------ Section Aside Most Popular ------*/
+        .mostpopularBox {
+            flex: 1;
+            border-radius: 25px;
+            margin-left: 1em;
+        }
+        .mostpopularBlock {
+            margin-top: 5px;
+        }
+        .mostpopularTitle {
+            margin: 2em 1em 0 1em;
+        }
+        .cadreHostPopular {
+            background-color: white;
+            border-radius: 30px;
+            padding: 1%;
+            margin: 0 20px 40px 20px;
+            min-width: 340px;
+            height: 30%;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .imagePopularBox {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            width: 130px;
+            height: 130px;
+            border-radius: 25px  0 0 25px;
+        }
+        .imagePopularHost {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.36);
+        }
+        .hostingPopularDescription {
+            margin-left: 20px;
+            height: 125px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .hostingPopularPrice {
+            line-height: none;
+            margin-top: 0;
+        }
+        .hostingPopularStar {
+            align-content: space-between;
+        }
+/*------ Section Activités ------*/
+        .Activity {
+            max-width: 100%;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        .activityTitle {
+            margin-top: 1em;
+        }
+        .blockActivity {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+/*------------------------------------------------------------*/
+        .activity1Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-right: 1%;
+            height: 450px;
+        }
+        .activity1ImageBox {
+            width: 300px;
+            height: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity1Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+/*------------------------------------------------------------*/        
+        .activityBox23 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin-left: 0%;
+            margin-right: 1%;
+            height: 450px;
+        }
+        .activity2Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            height: 57%;
+        }
+        .activity2ImageBox {
+            width: 300px;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity2Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .activity3Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            height: 37%;
+        }
+        .activity3ImageBox {
+            width: 300px;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity3Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+/*--------------------------------------------------------------*/        
+        .activity4Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            margin-right: 1%;
+            height: 450px;
+        }
+        .activity4ImageBox {
+            width: 300px;
+            height: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity4Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+/*-------------------------------------------------------------*/        
+        .activityBox56 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 450px;
+        }
+        .activity5Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            height: 47%;
+        }
+        .activity5ImageBox {
+            width: 300px;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity5Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .activity6Box {
+            border-radius:30px;
+            box-shadow: #F2F2F2 3px 5px 10px;
+            height: 47%;
+        }
+        .activity6ImageBox {
+            width: 300px;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px 30px 0 0;
+        }
+        .activity6Image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .activityText13 {
+            margin-left: 5%;
+        }
+        .activityText24 {
+            margin-left: 5%;
+       }
        
+/*------ Footer ------*/     
+       .footerApropos {
+           flex: 1;
+           margin-left: 50px
+       }
+       .footerHebergement {
+           flex: 1;
+       }
+       .footerAssistance {
+           flex: 2;
+       }
 
