@@ -170,6 +170,7 @@ body {
         .filtresText {
             margin-right: 5%;
             margin-top: 1%;
+            font-size: 1.2em;
         }
         .filtresTextIcone {
             border: #F2F2F2 2px solid;
@@ -446,7 +447,8 @@ body {
            flex: 1;
     }    
 
-@media screen and (min-width:993px)
+/* Media Queries Desktop */
+    @media screen and (min-width:993px)
 {
     #blockpage {
         max-width: 93%;

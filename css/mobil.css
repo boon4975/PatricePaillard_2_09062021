@@ -3,7 +3,6 @@
     body {
         max-width: 728px;
         margin: 0;
-        /*background-color: chartreuse;*/
     }
     #blockPage {
         max-width: 98%;
@@ -50,6 +49,7 @@
     .filtresTextTablet {
         margin-right: 1em;
         padding-top: 1em;
+        font-size: 1.4em;
     }
     .mostpopularBox {
         margin-left: 0;

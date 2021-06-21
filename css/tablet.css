@@ -20,6 +20,7 @@
     .filtresTextTablet {
         margin-right: 1em;
         padding-top: 1em;
+        font-size: 1.2em;
     }
     .mainHostingBox {
         flex-direction: column-reverse;
