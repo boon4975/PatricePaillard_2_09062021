@@ -1,0 +1,89 @@
+@media screen and (max-width:728px)
+{
+    body {
+        max-width: 728px;
+        margin: 0;
+    }
+    #blockPage {
+        max-width: 98%;
+        margin: auto;
+    }
+    header {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .navDesktop {
+        display: none;
+    }
+    .navTablet {
+        margin: 0;
+    }
+    li:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        width: 40%;
+        text-align: justify;
+    }
+    .listnav {
+        border-top: none;
+        border-bottom: 2px solid transparent;
+        text-align: center;
+    }
+    .searchButton {
+        display: none;
+    }
+    .searchButtonTablet {
+        text-align: right;
+        color: white;
+        background-color: #0065FC;
+        width: 52px;
+        height: 52px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+     }
+    .filtresText {
+        display: none;
+    }
+    .filtresTextTablet {
+        margin-right: 1em;
+        padding-top: 1em;
+        font-size: 1.4em;
+    }
+    .mostpopularBox {
+        margin-left: 0;
+        margin-bottom: 5%;
+        border-radius: 0%;
+    }
+    .hostingBox {
+        background-color: white;
+    }
+    .cadreHost {
+        width: 325px;
+    }
+    .imageHost13 {
+        transform: translate(-50%, -50%) scale(0.45);
+    }
+    .imageHost25 {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    .imageHost46 {
+        transform: translate(-50%, -50%) scale(0.33);
+    }
+    .blockActivity {
+        margin-left: 1em;
+    }
+    .activityTitle {
+        padding-left: 1em;
+    }
+    .activityBoxAll {
+        margin-top: 1em;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer > .footerDetail {
+        margin-left: 1em;
+    }
+}
