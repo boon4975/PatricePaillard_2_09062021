@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css" media="screen and (min-width: 729px) and (max-width:992px)">
+    <link rel="stylesheet" type="text/css" href="css/mobil.css" media="screen and (max-width: 728px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/644a43a817.js" crossorigin="anonymous"></script>
@@ -15,27 +17,38 @@
         <div id="blockpage">
 
             <header>
-                <div class="flexBetween">
+                <div class="navDesktop">
                     <img src="img/logo/Reservia.svg" alt="Reservia">
                     <div>
                         <nav>
-                            <ul class="flexAround">
+                            <ul>
                                 <li class="listnodecoration listnav"><a href="#Hosting">Hébergements</a></li>
                                 <li class="listnodecoration  listnav"><a href="#Activity">Activités</a></li>
-                                <li class="listnodecoration listnav">S'inscrire</li>
+                                <li class="listnodecoration listnav bolderText colorBlue">S'inscrire</li>
                             </ul>
                         </nav>
                     </div>
-
+                </div>
+                <div class="navTablet">
+                    <div class="flexBetween">
+                        <img src="img/logo/Reservia.svg" alt="Reservia" class="listnav">
+                        <li class="listnodecoration listnav"><p class="listnav bolderText colorBlue">S'inscrire</p></li>
+                    </div>
+                    <nav class="flexBetween">
+                        <li class="listnodecoration listnav"><a href="#Hosting" class="listnav">Hébergements</a></li>
+                        <li class="listnodecoration listnav"><a href="#Activity" class="listnav">Activités</a></li>
+                        
+                    </nav>
                 </div>
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
-                <div class="flexCenter searchZone backGray">
-                    <div><i class="fas fa-map-marker-alt iconeMap backGray flexCenter"></i></div>
-                    <div><input type="search" name="ville" id="ville" value="Marseille, France" class="entryField flexCenter inputOutline"></div>
+                <div class="flexLeft searchZone">
+                    <div class="backGray iconeMap "><i id="iconMap" class="fas fa-map-marker-alt iconeMap  flexCenter"></i></div>
+                    <div><input type="search" name="ville" id="ville" value="Marseille, France" class="entryField bolderText flexCenter inputOutline"></div>
                     <div class="searchButton flexCenter" >Rechercher</div>
+                    <div class="searchButtonTablet"><i class=" fas fa-lg fa-search iconSearch"></i></div>
                 </div>
-
+                <div class="filtresTextTablet"><h2>Filtres</h2></div>
                 <div class="filtres">
                     <div class="filtresText"><h3>Filtres</h3></div>
                     <div class="filtresTextIcone flexBetween">
@@ -57,7 +70,7 @@
                 </div>
 
                 <div class="infoVille">
-                    <i class="fas fa-info iconInfo"></i>
+                    <i class="fas fa-info fa-sm iconInfo colorBlue"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
                 </div>
@@ -66,12 +79,12 @@
             <div class="mainHostingBox"><!--Pour Marseille-->
                 <div class="hostingBox"> <!--6 hébergements -->
                 
-                    <h3 class="hostingTitle" id="Hosting">Hébergements à Marseille</h3> <!--Ville de Marseille-->
+                    <h2 class="hostingTitle" id="Hosting">Hébergements à Marseille</h2> <!--Ville de Marseille-->
 
                     <div class="HostingBlock flexAround"> <!--Bloc de 6 lieux-->
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                                <img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imageHost" alt="Auberge la Cannebière">
+                                <img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imageHostAll imageHost13" alt="Auberge la Cannebière">
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Auberge la Cannebière</h3>
@@ -87,7 +100,7 @@
                         </div>
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                               <img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imageHost" alt="Hôtel du port"> 
+                               <img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imageHostAll imageHost25" alt="Hôtel du port"> 
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Hôtel du port</h3>
@@ -103,7 +116,7 @@
                         </div>
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                                <img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imageHost" alt="Hôtel Les mouettes">
+                                <img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imageHostAll imageHost13" alt="Hôtel Les mouettes">
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Hôtel Les mouettes</h3>
@@ -119,7 +132,7 @@
                         </div>
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                                <img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imageHost" alt="Hôtel de la mer">
+                                <img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imageHostAll imageHost46" alt="Hôtel de la mer">
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Hôtel de la mer</h3>
@@ -135,7 +148,7 @@
                         </div>
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                                <img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imageHost" alt="Auberge Le Panier">
+                                <img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imageHostAll imageHost25" alt="Auberge Le Panier">
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Auberge Le Panier</h3>
@@ -151,7 +164,7 @@
                         </div>
                         <div class="cadreHost"> <!--cadre pour Lieux 1-->
                             <div class="imageHostBox">
-                                <img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imageHost" alt="Hôtel chez Amina">
+                                <img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imageHostAll imageHost46" alt="Hôtel chez Amina">
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux 1-->
                                 <h3>Hôtel chez Amina</h3>
@@ -167,13 +180,13 @@
                         </div>
 
                     </div>
-                    <h4 class="seemoreText">Afficher plus</h4>
+                    <h3 class="seemoreText">Afficher plus</h3>
 
                 </div>
 
                 <div class="mostpopularBox backGray"> <!--mostPopular-->
                     <div class="flexBetween mostpopularTitle">
-                        <h3>Les plus populaires</h3>
+                        <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
 
@@ -237,47 +250,47 @@
             </div>
 
             <div class="Activity">
-                <h3 class="activityTitle" id="Activity">Activités à Marseille</h3>
+                <h2 class="activityTitle" id="Activity">Activités à Marseille</h2>
                 <div class="blockActivity">
-                    <div class="activity1Box">
-                        <div class="activity1ImageBox">
-                            <img src="img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="activity1Image">
+                    <div class="activityBoxAll activityBoxLarge">
+                        <div class="activityImageBoxAll activityImageBoxLarge">
+                            <img src="img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" class="activityImageAll activityImageLarge">
                         </div>
                         <h5 class="activityText13">Vieux Port</h5>
                     </div>
 
                     <div class="activityBox23">
-                        <div class="activity2Box">
-                            <div class="activity2ImageBox">
-                                <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="activity2Image">
+                        <div class="activityBoxAll activity2Box">
+                            <div class="activityImageBoxAll activity2ImageBox">
+                                <img src="img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="activityImageAll activity2Image">
                             </div>
                             <h5 class="activityText24">Fort de Pomègues</h5>
                         </div>
-                        <div class="activity3Box">
-                            <div class="activity3ImageBox">
-                                <img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="activity3Image">
+                        <div class="activityBoxAll activity3Box">
+                            <div class="activityImageBoxAll activityImageBoxMedium">
+                                <img src="img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="activityImageAll activityImageMedium">
                             </div>
                             <h5 class="activityText24">Îles du Frioul</h5>
                         </div>
                     </div>
 
-                    <div class="activity4Box">
-                        <div class="activity4ImageBox">
-                            <img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nationnal des Calanques" class="activity00Image13">
+                    <div class="activityBoxAll activityBoxLarge">
+                        <div class="activityImageBoxAll activityImageBoxLarge">
+                            <img src="img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc Nationnal des Calanques" class="activityImageAll activityImageLarge">
                         </div>
                         <h5 class="activityText13">Parc Nationnal des Calanques</h5>
                     </div>
 
                     <div class="activityBox56">
-                        <div class="activity5Box">
-                            <div class="activity5ImageBox">
-                                <img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="activity00Image24">
+                        <div class="activityBoxAll activityBoxMedium">
+                            <div class="activityImageBoxAll activityImageBoxMedium">
+                                <img src="img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="activityImageAll activityImageMedium">
                             </div>
                             <h5 class="activityText24">Notre-Dame-de-la-Garde</h5>
                         </div>
-                        <div class="activity6Box">
-                            <div class="activity6ImageBox">
-                                <img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="activity00Image24">
+                        <div class="activityBoxAll activityBoxMedium">
+                            <div class="activityImageBoxAll activityImageBoxMedium">
+                                <img src="img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="activityImageAll activityImageMedium">
                             </div>
                             <h5 class="activityText24">Parc Longchamp</h5>
                         </div>
@@ -287,19 +300,19 @@
 
             </div>
         </div>
-        <footer class="flexBetween backGray">
-            <div class="footerApropos ">
+        <footer>
+            <div class="footerApropos footerDetail ">
                 <h1>A propos</h1>
                 <p>Fonctionnement du site</p>
                 <p>Conditions Générales de vente</p>
                 <p>Données et confidentialité</p>
             </div>
-            <div class="footerHebergement">
+            <div class="footerDetail">
                 <h1>Nos hébergements</h1>
                 <p>Charte qualité</p>
                 <p>Soumettre votre hôtel</p>
             </div>
-            <div class="footerAssistance">
+            <div class="footerDetail">
                 <h1>Assistance</h1>
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>

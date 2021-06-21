@@ -1,0 +1,38 @@
+@media screen and (min-width:729px) and (max-width:992px)
+{
+    body {
+        max-width: 992px;
+        margin: 0;
+    }
+    #blockpage {
+        max-width: 95%;
+        margin: auto   
+    }
+    .navTablet {
+        display: none;
+    }
+    .searchButtonTablet {
+        display: none;
+    }
+    .filtresText {
+        display: none;
+    }
+    .filtresTextTablet {
+        margin-right: 1em;
+        padding-top: 1em;
+    }
+    .mainHostingBox {
+        flex-direction: column-reverse;
+    }
+    .mostpopularBox {
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+    .blockActivity {
+        justify-content: space-around;
+    }
+    .activityBoxAll {
+        margin-top: 1em;
+    }
+
+}
