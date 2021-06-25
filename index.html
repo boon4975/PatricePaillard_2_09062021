@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -16,58 +16,43 @@
             <header>
                 <div class="navDesktop">
                     <img src="img/logo/Reservia.svg" alt="Reservia">
-                    <div>
+                    
                         <nav>
                             <ul>
                                 <li class="listnodecoration listnav"><a href="#Hosting">Hébergements</a></li>
                                 <li class="listnodecoration  listnav"><a href="#Activity">Activités</a></li>
-                                <li class="listnodecoration listnav bolderText colorBlue">S'inscrire</li>
+                                <li class="listnodecoration listnav bolderText colorBlue register">S'inscrire</li>
                             </ul>
                         </nav>
-                    </div>
+                    
                 </div>
-                <div class="navTablet">
-                    <div class="flexBetween">
-                        <img src="img/logo/Reservia.svg" alt="Reservia" class="listnav">
-                        <nav>
-                            <ul>
-                                <li class="listnodecoration listnav"><p class="listnav bolderText colorBlue">S'inscrire</p></li>
-                            </ul>
-                        </nav> 
-                    </div>
-                    <nav class="flexBetween">
-                        <ul>
-                            <li class="listnodecoration listnav"><a href="#Hosting" class="listnav">Hébergements</a></li>
-                            <li class="listnodecoration listnav"><a href="#Activity" class="listnav">Activités</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
+                
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
                 <div class="flexLeft searchZone">
-                    <div class="backGray iconeMap "><i id="iconMap" class="fas fa-map-marker-alt iconeMap  flexCenter"></i></div>
-                    <div><input type="search" name="ville" id="ville" value="Marseille, France" class="entryField bolderText flexCenter inputOutline"></div>
-                    <div class="searchButton flexCenter" >Rechercher</div>
+                    <div class="flexCenter iconeMap backGray"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><input class="entryField bolderText flexCenter inputOutline" type="search" name="ville" id="ville" value="Marseille, France"></div>
+                    <div class="flexCenter searchButton " >Rechercher</div>
                     <div class="searchButtonTablet"><i class=" fas fa-lg fa-search iconSearch"></i></div>
                 </div>
-                <div class="filtresTextTablet bolderText"><p>Filtres</p></div>
+
                 <div class="filtres">
-                    <div class="filtresText bolderText"><p>Filtres</p></div>
+                    <div class=" flexCenter filtresText typo__filtres">Filtres</div>
                     <div class="filtresTextIcone flexBetween">
-                        <i id="iconMoney" class="fas fa-money-bill-wave fa-lg backBlueLight colorBlue filtresIcone flexCenter"></i>
-                        <div class="filtresCategory"><h3>&Eacute;conomique</h3></div>
+                        <div class="flexCenter filtresIcone backBlueLight colorBlue"><i class="fas fa-money-bill-wave fa-lg"></i></div>
+                        <div class="flexCenter filtresCategory typo__filtres">&Eacute;conomique</div>
                     </div>
                     <div class="filtresTextIcone flexBetween">
-                        <i id="iconChild" class="fas fa-child fa-lg backBlueLight colorBlue filtresIcone flexCenter"></i>
-                        <div class="filtresCategory"><h3>Familial</h3></div>
+                        <div class="flexCenter filtresIcone backBlueLight colorBlue"><i class="fas fa-child fa-lg"></i></div>
+                        <div class="flexCenter filtresCategory typo__filtres">Familial</div>
                     </div>
                     <div class="filtresTextIcone flexBetween">
-                        <i id="iconHeart" class="fas fa-heart fa-lg backBlueLight colorBlue filtresIcone flexCenter"></i>
-                        <div class="filtresCategory"><h3>Romantique</h3></div>
+                        <div class="flexCenter filtresIcone colorBlue backBlueLight"><i class="fas fa-heart fa-lg"></i></div>
+                        <div class="flexCenter filtresCategory typo__filtres">Romantique</div>
                     </div>
                     <div class="filtresTextIcone flexBetween">
-                        <i id="iconDog" class="fas fa-dog fa-lg backBlueLight colorBlue filtresIcone flexCenter"></i>
-                        <div class="filtresCategory"><h3>Animaux autorisés</h3></div>
+                        <div class="flexCenter filtresIcone colorBlue backBlueLight"><i class="fas fa-dog fa-lg"></i></div>
+                        <div class="flexCenter filtresCategory typo__filtres">Animaux autorisés</div>
                     </div>
                 </div>
 
@@ -77,7 +62,7 @@
                 </div>
             </header>
             
-            <div class="mainHostingBox"><!--Pour Marseille-->
+            <section class="mainHostingBox"><!--Pour Marseille-->
                 <div class="hostingBox"> <!--6 hébergements -->
                 
                     <h2 class="hostingTitle" id="Hosting">Hébergements à Marseille</h2> <!--Ville de Marseille-->
@@ -85,7 +70,7 @@
                     <div class="HostingBlock flexAround"> <!--Bloc de 6 lieux-->
                         <div class="cadreHost"> <!--cadre pour 1 Lieux -->
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="imageHostAll imageHost13" alt="Auberge la Cannebière"></a>
+                                <div><a href=""><img src="img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"></a></div>
                             </div>
                             <div class="hostingDescription"> <!--cadre info du lieux -->
                                 <h3>Auberge la Cannebière</h3>
@@ -101,7 +86,7 @@
                         </div>
                         <div class="cadreHost">
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="imageHostAll imageHost25" alt="Hôtel du port"></a>
+                                <div><a href=""><img src="img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"></a></div>
                             </div>
                             <div class="hostingDescription">
                                 <h3>Hôtel du port</h3>
@@ -117,7 +102,7 @@
                         </div>
                         <div class="cadreHost">
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="imageHostAll imageHost13" alt="Hôtel Les mouettes"></a>
+                                <div><a href=""><img src="img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"></a></div>
                             </div>
                             <div class="hostingDescription">
                                 <h3>Hôtel Les mouettes</h3>
@@ -133,7 +118,7 @@
                         </div>
                         <div class="cadreHost">
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="imageHostAll imageHost46" alt="Hôtel de la mer"></a>
+                                <div><a href=""><img src="img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"></a></div>
                             </div>
                             <div class="hostingDescription">
                                 <h3>Hôtel de la mer</h3>
@@ -149,7 +134,7 @@
                         </div>
                         <div class="cadreHost">
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="imageHostAll imageHost25" alt="Auberge Le Panier"></a>
+                                <div><a href=""><img src="img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"></a></div>
                             </div>
                             <div class="hostingDescription">
                                 <h3>Auberge Le Panier</h3>
@@ -165,7 +150,7 @@
                         </div>
                         <div class="cadreHost">
                             <div class="imageHostBox">
-                                <a href=""><img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="imageHostAll imageHost46" alt="Hôtel chez Amina"></a>
+                                <div><a href=""><img src="img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"></a></div>
                             </div>
                             <div class="hostingDescription">
                                 <h3>Hôtel chez Amina</h3>
@@ -181,7 +166,7 @@
                         </div>
 
                     </div>
-                    <h3 class="seemoreText">Afficher plus</h3>
+                    <div class="seemoreText "><a href="" >Afficher plus</a></div>
 
                 </div>
 
@@ -194,7 +179,7 @@
                     <div class="mostpopularBlock">
                         <div class="cadreHostPopular"> <!--Cadre pour 1 Lieux-->
                             <div class="imagePopularBox">
-                                <a href=""><img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="imagePopularHost" alt="Hôtel Le soleil du matin"></a>
+                                <div><a href=""><img src="img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"></a></div>
                             </div>
                             <div class="hostingPopularDescription"> <!--cadre info du lieux -->
                                 <div>
@@ -212,7 +197,7 @@
                         </div>
                         <div class="cadreHostPopular">
                             <div class="imagePopularBox">
-                                <a href=""><img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" class="imagePopularHost" alt="Au coeur de l'eau"></a>
+                                <div><a href=""><img src="img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"></a></div>
                             </div>
                             <div class="hostingPopularDescription">
                                 <div>
@@ -230,7 +215,7 @@
                         </div>
                         <div class="cadreHostPopular">
                             <div class="imagePopularBox">
-                                <a href=""><img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" class="imagePopularHost" alt="Hôtel Tout bleu et Blanc"></a>
+                                <div><a href=""><img src="img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"></a></div>
                             </div>
                             <div class="hostingPopularDescription">
                                 <div>
@@ -248,9 +233,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="Activity">
+            <section class="Activity">
                 <h2 class="activityTitle" id="Activity">Activités à Marseille</h2>
                 <div class="blockActivity">
                     <div class="activityBoxAll activityBoxLarge"><!--Cadre pour 1 Lieux-->
@@ -299,7 +284,7 @@
                 </div>
 
 
-            </div>
+            </section>
         </div>
         <footer>
             <div class="footerApropos footerDetail ">

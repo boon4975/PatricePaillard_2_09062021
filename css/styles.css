@@ -29,6 +29,16 @@ body {
         p {
             font-size: 0.8em;
         }
+        .typo__filtres {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        .bolderText {
+            font-weight: bolder;
+        }
+        .textBlack {
+            color: black;
+        }
 
      /* flex */
         .flexCenter {
@@ -41,12 +51,6 @@ body {
             justify-content: space-between;
             align-items: center;
         }
-        .flexColumnCenterBetween {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-        }
         .flexAround {
             display: flex;
             justify-content: space-around;
@@ -56,10 +60,6 @@ body {
             display: flex;
             justify-content: left;
             align-items: center;
-        }
-        .flexColumn {
-            display: flex;
-            flex-direction: column;
         }
         
     /* text color and decoration */
@@ -82,12 +82,6 @@ body {
         .backBlueLight {
             background-color: #deebff;
         }
-        .bolderText {
-            font-weight: bolder;
-        }
-        .textBlack {
-            color: black;
-        }
         
 
 
@@ -100,8 +94,6 @@ body {
         .listnav {
             padding: 30px 30px;
             border-top: 2px solid transparent;
-            width: 120px;
-            text-align: right;
         }
         nav a {
             text-decoration: none;
@@ -127,21 +119,19 @@ body {
 
 /*------ Search menu ------*/
         .searchZone {
-            max-width: 420px;
+            min-width: 20%;
+            max-width: 30%;
             height: 50px;
             padding: 0;
         }
         .iconeMap {
-            text-align: center;
-            width: 52px;
-            border-radius: 15px 0 0 15px;
+            min-width: 50px;
             height: 50px;
-        }
-        #iconMap {
-            display: flex ;
+            border-radius: 15px 0 0 15px;
+            
         }
         .entryField {
-            width: 240px;
+            min-width: 200px;
             height: 50px;
             border-top: #F2F2F2 1px solid;
             border-bottom: #F2F2F2 1px solid;
@@ -153,8 +143,10 @@ body {
             text-align: right;
             color: white;
             background-color: #0065FC;
-            width: 101%;
-            height: 101%;
+            width: 100px;
+            height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
             align-items: center;
             border-radius: 0 15px 15px 0;
          }
@@ -168,33 +160,20 @@ body {
             flex-wrap: wrap;
         }
         .filtresText {
-            margin-right: 5%;
+            margin-right: 4%;
             margin-top: 1%;
-            font-size: 1.2em;
         }
         .filtresTextIcone {
             border: #F2F2F2 2px solid;
             border-radius: 30px;
-            margin-right: 1.5em;
+            margin-right: 20px;
             height: 50px;
-            margin-top: 1%;
+            margin-top: 10px;
         }
         .filtresIcone {
             width: 52px;
             height: 52px;
             border-radius: 25px;
-        }
-        #iconMoney {
-            display: flex;
-        }
-        #iconChild {
-            display: flex;
-        }
-        #iconHeart {
-            display: flex;
-        }
-        #iconDog {
-            display: flex;
         }
         .filtresCategory {
             padding-left: 0.8em;
@@ -246,44 +225,34 @@ body {
             padding-left: 1em;
         }
         .seemoreText {
-            padding-top: 1em;
+            padding-top: 1.5em;
             padding-left: 1em;
-        }    
+        }
+        .seemoreText a {
+            text-decoration: none;
+            color: black;
+        }   
         .HostingBlock {
            flex-wrap: wrap;
         }
         .cadreHost {
             background-color: white;
             border-radius: 30px;
-            width: 240px;
-            padding: 1%;
+            width: 245px;
+            padding: 5px;
             margin-top: 10px;
         }
               
         /* Hosting image */
         .imageHostBox {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
-            height: 115px;
             border-radius: 25px 25px 0px 0;
         }
-        .imageHostAll {
-            position: absolute;
-            top: 50%;
-            left: 50%;
+        .imageHostBox img {
+            width: 100%;
+            height: 115px;
         }
-        .imageHost13 {
-            transform: translate(-50%, -50%) scale(0.33);
-        }
-        .imageHost25 {
-            transform: translate(-50%, -50%) scale(0.45);
-        }
-        .imageHost46 {
-            transform: translate(-50%, -50%) scale(0.25);
-        }
+        
         .hostingDescription {
             margin-left: 10px;
         }
@@ -303,23 +272,21 @@ body {
         .cadreHostPopular {
             background-color: white;
             border-radius: 30px;
-            padding: 1%;
+            padding: 5px;
             margin: 0 20px 40px 20px;
-            min-width: 340px;
-            height: 30%;
+            height: 125px;
             display: flex;
             align-items: flex-start;
         }
         
         .imagePopularBox {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
+            border-radius: 25px 0 0 25px;
+        }
+        .imagePopularBox img {
+            height: 125px;
             width: 130px;
-            height: 130px;
-            border-radius: 25px  0 0 25px;
+            border-radius: 25px 0 0 25px;            
         }
         .imagePopularHost {
             position: absolute;
@@ -460,8 +427,5 @@ body {
     .searchButtonTablet {
         display: none;
     }
-    .filtresTextTablet {
-        display: none;
-    }
-        
+      
 }

@@ -8,19 +8,8 @@
         max-width: 95%;
         margin: auto   
     }
-    .navTablet {
-        display: none;
-    }
     .searchButtonTablet {
         display: none;
-    }
-    .filtresText {
-        display: none;
-    }
-    .filtresTextTablet {
-        margin-right: 1em;
-        padding-top: 1em;
-        font-size: 1.2em;
     }
     .mainHostingBox {
         flex-direction: column-reverse;
