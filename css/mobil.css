@@ -64,6 +64,9 @@
      .filtres > .filtresText, .filtresTextIcone {
          justify-content: flex-start;         
      }
+    .mainHostingBox {
+        flex-direction: column-reverse;
+    }
     .mostpopularBox {
         margin-left: 0;
         margin-bottom: 5%;
@@ -86,12 +89,16 @@
     .activityTitle {
         padding-left: 1em;
     }
-    .activity__block {
+    .activity__block1, .cadre__activity--2, .cadre__activity--3, .cadre__activity--56 {
         width: 330px;
-        height: 100%;
+        height: 190px;
+        margin: 20px;
     }
     .cadre__activity__img {
         width: 100%;
+    }
+    .cadre__activity__img--14, .cadre__activity__img--2, .cadre__activity__img--3 {
+        height: 75%;
     }
     footer {
         flex-direction: column;

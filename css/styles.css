@@ -320,7 +320,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.activity__block {
+.activity__block1, .activity__block2 {
     height: 445px;
     width: 300px;
     margin-top: 40px;
