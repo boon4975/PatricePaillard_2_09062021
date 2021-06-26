@@ -12,17 +12,31 @@
         margin-left: 2%;
         margin-right: 2%;
     }
-    .navDesktop {
-        display: none;
-    }
-    .navTablet {
+    .register {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 0;
         margin: 0;
+        border-bottom: none;
     }
+    .navDesktop {
+        display: block;
+    }
+    .navDesktop img {
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+    
     li:hover {
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        width: 40%;
-        text-align: justify;
     }
     .listnav {
         border-top: none;
@@ -36,20 +50,22 @@
         text-align: right;
         color: white;
         background-color: #0065FC;
-        width: 52px;
-        height: 52px;
+        min-width: 50px;
+        height: 50px;
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;  
      }
-    .filtresText {
-        display: none;
-    }
-    .filtresTextTablet {
-        margin-right: 1em;
-        padding-top: 1em;
-        font-size: 1.4em;
+     .filtres {
+         display: block;
+         width: 250px;
+     }
+     .filtres > .filtresText, .filtresTextIcone {
+         justify-content: flex-start;         
+     }
+    .mainHostingBox {
+        flex-direction: column-reverse;
     }
     .mostpopularBox {
         margin-left: 0;
@@ -64,27 +80,25 @@
         box-shadow: 3px 10px 10px #F2F2F2, -3px -3px #F2F2F2 ;
         margin-top: 20px;
     }
-    .imageHost13 {
-        transform: translate(-50%, -50%) scale(0.45);
-    }
-    .imageHost25 {
-        transform: translate(-50%, -50%) scale(0.5);
-    }
-    .imageHost46 {
-        transform: translate(-50%, -50%) scale(0.33);
+    .cadreHostPopular {
+        margin: 0 10px 40px 10px;
     }
     .blockActivity {
-        margin-left: 1em;
+        justify-content: center;
     }
     .activityTitle {
         padding-left: 1em;
     }
-    .activityBoxAll {
-        margin-top: 1em;
+    .activity__block1, .cadre__activity--2, .cadre__activity--3, .cadre__activity--56 {
+        width: 330px;
         height: 190px;
+        margin: 20px;
     }
-    .activityImageBoxLarge {
-        height: 70%;
+    .cadre__activity__img {
+        width: 100%;
+    }
+    .cadre__activity__img--14, .cadre__activity__img--2, .cadre__activity__img--3 {
+        height: 75%;
     }
     footer {
         flex-direction: column;
