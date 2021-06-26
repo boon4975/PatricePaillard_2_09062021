@@ -77,27 +77,21 @@
         box-shadow: 3px 10px 10px #F2F2F2, -3px -3px #F2F2F2 ;
         margin-top: 20px;
     }
-    .imageHost13 {
-        transform: translate(-50%, -50%) scale(0.45);
-    }
-    .imageHost25 {
-        transform: translate(-50%, -50%) scale(0.5);
-    }
-    .imageHost46 {
-        transform: translate(-50%, -50%) scale(0.33);
+    .cadreHostPopular {
+        margin: 0 10px 40px 10px;
     }
     .blockActivity {
-        margin-left: 1em;
+        justify-content: center;
     }
     .activityTitle {
         padding-left: 1em;
     }
-    .activityBoxAll {
-        margin-top: 1em;
-        height: 190px;
+    .activity__block {
+        width: 330px;
+        height: 100%;
     }
-    .activityImageBoxLarge {
-        height: 70%;
+    .cadre__activity__img {
+        width: 100%;
     }
     footer {
         flex-direction: column;
