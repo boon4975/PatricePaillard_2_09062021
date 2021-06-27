@@ -39,27 +39,26 @@ body {
         .textBlack {
             color: black;
         }
+        .typo__title2--padding {
+            padding: 1em;
+        }
 
      /* flex */
-        .flexCenter {
+        .flexCenter, .flexBetween, .flexAround, .flexLeft {
             display: flex;
-            justify-content: center;
             align-items: center;
+        }
+        .flexCenter {
+            justify-content: center;
         }
         .flexBetween {
-            display: flex;
             justify-content: space-between;
-            align-items: center;
         }
         .flexAround {
-            display: flex;
             justify-content: space-around;
-            align-items: center;
         }
         .flexLeft {
-            display: flex;
             justify-content: left;
-            align-items: center;
         }
         
     /* text color and decoration */
@@ -220,12 +219,8 @@ body {
             background-color: #F2F2F2;
             border-radius: 25px;
         }
-        .hostingTitle {
-            padding-top: 2em;
-            padding-left: 1em;
-        }
         .seemoreText {
-            padding: 1.5em;
+            padding: 1em;
         }
         .seemoreText a {
             text-decoration: none;
@@ -268,9 +263,6 @@ body {
         .mostpopularBlock {
             margin-top: 5px;
         }
-        .mostpopularTitle {
-            margin: 2em 1em 0 1em;
-        }
         .cadreHostPopular {
             background-color: white;
             border-radius: 30px;
@@ -311,9 +303,6 @@ body {
     max-width: 100%;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.activityTitle {
-    margin-top: 1em;
 }
 .blockActivity {
     display: flex;
