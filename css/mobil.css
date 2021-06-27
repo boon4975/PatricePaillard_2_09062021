@@ -92,7 +92,7 @@
     .activity__block1, .cadre__activity--2, .cadre__activity--3, .cadre__activity--56 {
         width: 330px;
         height: 190px;
-        margin: 20px;
+        margin: 20px 50px 20px 50px;
     }
     .cadre__activity__img {
         width: 100%;
