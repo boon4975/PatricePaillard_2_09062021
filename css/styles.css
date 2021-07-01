@@ -215,7 +215,7 @@ nav ul {
     border-radius: 25px;
 }
 .seemoreText {
-    padding: 1em;
+    padding: 2em 1em;
 }
 .seemoreText a {
     text-decoration: none;
@@ -266,14 +266,23 @@ nav ul {
     align-items: center;
 }
 .imagePopularBox {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     border-radius: 25px 0 0 25px;
     width: 130px;
     height: 130px;
 }
-.imagePopularBox img {
+.imagePopularBox--portrait {
+    align-items: center;
+}
+.img-paysage {
     height: 100%;
-    width: 100%;            
+    width: auto;
+}
+.img-portrait {
+    width: 100%;
+    height: auto;
 }
 .hostingPopularDescription {
     margin-left: 20px;

@@ -94,6 +94,9 @@
         height: 190px;
         margin: 20px 50px 20px 50px;
     }
+    .activity__block2 {
+        margin-top: 0;
+    }
     .cadre__activity__img {
         width: 100%;
     }
