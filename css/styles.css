@@ -268,17 +268,17 @@ nav ul {
 .imagePopularBox {
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 25px 0 0 25px;
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 135px;
 }
-.imagePopularBox--portrait {
-    align-items: center;
-}
+
 .img-paysage {
-    height: 100%;
-    width: auto;
+    width: 150%;
+    height: auto;
+    
 }
 .img-portrait {
     width: 100%;
@@ -286,7 +286,7 @@ nav ul {
 }
 .hostingPopularDescription {
     margin-left: 20px;
-    height: 125px;
+    height: 135px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
